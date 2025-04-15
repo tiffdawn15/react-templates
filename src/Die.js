@@ -1,7 +1,7 @@
 import "./Die.css"
 
-export default function Die(){
-    const roll = Math.floor(Math.random() * 6) ;
+export default function Die({numSides = 6}){
+    const roll = Math.floor(Math.random() * numSides) + 1 ;
     return (
         <div className="die">
         <h2>🎲</h2>
