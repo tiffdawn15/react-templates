@@ -5,6 +5,7 @@ export default function Die({numSides = 6}){
     return (
         <div className="die">
         <h2>🎲</h2>
+        <p></p>
         <p>{roll}</p>
         </div>
     );
