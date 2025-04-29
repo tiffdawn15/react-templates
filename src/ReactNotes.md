@@ -22,3 +22,5 @@ Using <> at the root of a component prevents having an extra <div></div> mucking
 
 Don't shy away from making breaking things down into smaller components. This is important for reusability. 
 
+## State
+ > Use updator functions when you have a reactive piece of code that needs to show 
