@@ -42,3 +42,26 @@ Don't shy away from making breaking things down into smaller components. This is
   React contorls:
   _ what is shown in the form
   _ react updates a piece of data w/ state as it is typed into the form
+
+  ## Effects
+
+  > For doing something after a the pages renders
+
+  - changing parts of the DOM not covered by React
+  - async operations like Ajax request when a component is mounted
+  - Doing things when a component is aobu to be unmounted
+
+  * useEffect
+    > my eeffect always runs after first render
+    > By default, effect runs after all re-renders
+
+  ## Getting Data via AJAX on mount
+
+  - When a componnent renders, fetch data from an api
+
+    > Data fetching is asynchronous, and may take a sec
+    > show a loading message
+
+  - Fetching Correctly:
+    > have an effect that runs only once
+    > inside effect, when api call finishes, set state & render
