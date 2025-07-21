@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function NoLooking() {
     const [color, setColor] = useState("red"); 
+
+  
     return(
         <>
         <h1>My favorite color is {color}</h1>
@@ -15,6 +17,5 @@ function NoLooking() {
         </>
     )
 }
-
 
 export default NoLooking;
