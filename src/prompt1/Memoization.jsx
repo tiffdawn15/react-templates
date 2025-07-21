@@ -12,7 +12,6 @@ export default function Memoization({ children }) {
         const result = await res.json();
         setArtworks(result.data);
       } catch (err) {
-        console.log(err);
         setError(err);
       } finally {
         setLoading(false);
